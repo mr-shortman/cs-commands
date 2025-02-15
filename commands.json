@@ -53,6 +53,14 @@
           "No": "0",
           "Yes": "1"
         }
+      },
+      {
+        "label": "One MORE TEST: Added by Submodule",
+        "command": "cl_submodule_test",
+        "options": {
+          "No": "0",
+          "Yes": "1"
+        }
       }
     ],
     "Communication": [
