@@ -45,6 +45,14 @@
           "Remember Last State": "1",
           "Automatic": "2"
         }
+      },
+      {
+        "label": "TEST: Added by Submodule",
+        "command": "cl_submodule",
+        "options": {
+          "No": "0",
+          "Yes": "1"
+        }
       }
     ],
     "Communication": [
