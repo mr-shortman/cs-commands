@@ -1,0 +1,37 @@
+{
+  "$ref": "#/definitions/CounterstrikeCommandsDefinitionType",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "CounterstrikeCommandSchemaType": {
+      "additionalProperties": false,
+      "properties": {
+        "command": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "options": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "type": "object"
+        }
+      },
+      "required": ["label", "command", "options"],
+      "type": "object"
+    },
+    "CounterstrikeCommandsDefinitionType": {
+      "additionalProperties": {
+        "additionalProperties": {
+          "items": {
+            "$ref": "#/definitions/CounterstrikeCommandSchemaType"
+          },
+          "type": "array"
+        },
+        "type": "object"
+      },
+      "type": "object"
+    }
+  }
+}
