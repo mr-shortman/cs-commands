@@ -1,0 +1,4075 @@
+[
+  {
+    "name": "mm_dedicated_search_maxping",
+    "category": "game:game",
+    "description": "Max Acceptable Matchmaking Ping",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 350,
+          "def": 100
+        }
+      }
+    ]
+  },
+  {
+    "name": "rate",
+    "category": "game:game",
+    "description": "Max Acceptable Game Traffic Bandwidth",
+    "tooltip": "Allows to specify game traffic bandwidth that online game servers send to you during gameplay. Lower bandwidth rate setting can help avoid packet loss if your internet service provider or routers drop network packets.\n\nInsufficient bandwidth rate however can result in delayed network packets at times when game server sends updates about multiple other players over the network to your client.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "98304",
+              "label": "Extremely restricted"
+            },
+            {
+              "value": "131072",
+              "label": "Below 1.0 Mbps"
+            },
+            {
+              "value": "196608",
+              "label": "Up to 1.5 Mbps"
+            },
+            {
+              "value": "262144",
+              "label": "Up to 2.0 Mbps"
+            },
+            {
+              "value": "327680",
+              "label": "Up to 2.5 Mbps"
+            },
+            {
+              "value": "393216",
+              "label": "3 Mbps"
+            },
+            {
+              "value": "524288",
+              "label": "4 Mbps"
+            },
+            {
+              "value": "786432",
+              "label": "Unrestricted"
+            }
+          ],
+          "def": 7
+        }
+      }
+    ]
+  },
+  {
+    "name": "fps_max",
+    "category": "game:game",
+    "description": "Max FPS",
+    "tooltip": "Caps the FPS on a specific amount. You can set it to you monitor refresh rate if you struggle with micro stutters. Set it to 0 for uncapped FPS.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 1000,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "give",
+    "category": "game:game",
+    "description": "Gives a Givable Item",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "weapon_codes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "buy",
+    "category": "game:game",
+    "description": "Buy a Purchasable Item",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "purchasables",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "hurtme",
+    "category": "game:game",
+    "description": "Damage Yourself",
+    "tooltip": "Give yourself X amount of damage.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&damage_amount"
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_pitchup",
+    "category": "game:game",
+    "description": "Degrees You can Look Up",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 180,
+          "def": 89
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_pitchdown",
+    "category": "game:game",
+    "description": "Degrees You can Look Down",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 180,
+          "def": 89
+        }
+      }
+    ]
+  },
+  {
+    "name": "viewmodel_fov",
+    "category": "game:game",
+    "description": "Viewmodel FOV",
+    "tooltip": "-2 = mid, 2.5 = right",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 54,
+          "max": 68,
+          "def": 60
+        }
+      }
+    ]
+  },
+  {
+    "name": "viewmodel_offset_x",
+    "category": "game:game",
+    "description": "Viewmodel Z Offset",
+    "tooltip": "-2 = mid, 2.5 = right",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -2,
+          "max": 2,
+          "def": 2
+        }
+      }
+    ]
+  },
+  {
+    "name": "viewmodel_offset_y",
+    "category": "game:game",
+    "description": "Viewmodel Y Offset",
+    "tooltip": "-2 = near to player, 2 = away from player",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -2,
+          "max": 2,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "viewmodel_offset_z",
+    "category": "game:game",
+    "description": "Viewmodel Z Offset",
+    "tooltip": "-2 = down, 2 = up",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -2,
+          "max": 2,
+          "def": -2
+        }
+      }
+    ]
+  },
+  {
+    "name": "joy_movement_stick",
+    "category": "game:game",
+    "description": "Use Right Joystick for Movement",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "notarget",
+    "category": "game:game",
+    "description": "Player Becomes Hidden to NPCs",
+    "tooltip": "Did not work in my testing. If someone know how it works, send us an email: 'cfg@shortman.me'",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+use",
+    "category": "game:game",
+    "description": "Use",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+forward",
+    "category": "game:movement",
+    "description": "Move Forward",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+back",
+    "category": "game:movement",
+    "description": "Move Backwards",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+left",
+    "category": "game:movement",
+    "description": "Strafe Left",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+right",
+    "category": "game:movement",
+    "description": "Strafe Right",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+sprint",
+    "category": "game:movement",
+    "description": "Walk",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+jump",
+    "category": "game:movement",
+    "description": "Jump",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "noclip",
+    "category": "game:movement",
+    "description": "Noclip",
+    "tooltip": "Clip through all walls and fly around.",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "sv_autobunnyhopping",
+    "category": "game:movement",
+    "description": "Auto Bunnyhop",
+    "tooltip": "Players automatically re-jump while holding jump button.",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "buymenu",
+    "category": "game:hud",
+    "description": "Buy Menu",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+spray_menu",
+    "category": "game:hud",
+    "description": "Graffiti Menu",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "toggleconsole",
+    "category": "game:hud",
+    "description": "Toggle Console",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "mp_deathcam_skippable",
+    "category": "game:hud",
+    "description": "Skippable Deathcam",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "disconnect",
+    "category": "game:hud",
+    "description": "Disconnect from Server",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "quit",
+    "category": "game:hud",
+    "description": "Quit the Game",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+showscores",
+    "category": "game:hud",
+    "description": "Scoreboard",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "teammenu",
+    "category": "game:hud",
+    "description": "Coose Team",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "cancelselect",
+    "category": "game:hud",
+    "description": "Cancel Selection",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "safezonex",
+    "category": "game:hud",
+    "description": "Horizontal HUD Adjustment",
+    "tooltip": "1 means HUD sticks on the edge",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.45,
+          "max": 1.0,
+          "def": 0.968
+        }
+      }
+    ]
+  },
+  {
+    "name": "safezoney",
+    "category": "game:hud",
+    "description": "Vertical HUD Adjustment",
+    "tooltip": "1 means HUD sticks on the edge",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.8,
+          "max": 1.0,
+          "def": 0.946
+        }
+      }
+    ]
+  },
+  {
+    "name": "callvote",
+    "category": "game:hud",
+    "description": "Call Vote",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "cl_draw_only_deathnotices",
+    "category": "game:hud",
+    "description": "Show Only Deathnotices",
+    "tooltip": "For drawing only the crosshair and death notices (used for moviemaking)",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_hud_color",
+    "category": "game:hud",
+    "description": "HUD Color",
+    "tooltip": "This color is applied to selected parts of the HUD, including health, armor and ammo.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Team Color"
+            },
+            {
+              "value": "1",
+              "label": "Player Color"
+            },
+            {
+              "value": "2",
+              "label": "White"
+            },
+            {
+              "value": "3",
+              "label": "Bright White"
+            },
+            {
+              "value": "4",
+              "label": "Light Blue"
+            },
+            {
+              "value": "5",
+              "label": "Blue"
+            },
+            {
+              "value": "6",
+              "label": "Purple"
+            },
+            {
+              "value": "7",
+              "label": "Red"
+            },
+            {
+              "value": "8",
+              "label": "Orange"
+            },
+            {
+              "value": "9",
+              "label": "Yellow"
+            },
+            {
+              "value": "10",
+              "label": "Green"
+            },
+            {
+              "value": "11",
+              "label": "Aqua"
+            },
+            {
+              "value": "12",
+              "label": "Pink"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_teamcounter_playercount_instead_of_avatars",
+    "category": "game:hud",
+    "description": "Large Player Count",
+    "tooltip": "During the active portion of the round, replace player avatars with team player count in the mini-scoreboard.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "r_show_build_info",
+    "category": "game:hud",
+    "description": "Show Build Info (bottom left)",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_show_clan_in_death_notice",
+    "category": "game:hud",
+    "description": "Show Clan in Death Notice",
+    "tooltip": "Currently you can't select a clan in the game, so nothing changes!",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_showpos",
+    "category": "game:hud",
+    "description": "Show Positon on Screen",
+    "tooltip": "Draw current position at top of screen.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Off"
+            },
+            {
+              "value": "1",
+              "label": "On"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_showfps",
+    "category": "game:hud",
+    "description": "Show FPS on Screen",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "No"
+            },
+            {
+              "value": "1",
+              "label": "Only FPS"
+            },
+            {
+              "value": "2",
+              "label": "FPS + Avarage, Min, Max"
+            },
+            {
+              "value": "3",
+              "label": "Server Ticks"
+            },
+            {
+              "value": "4",
+              "label": "Avg FPS, Frame MS, Frame Server Ms"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_join_advertise",
+    "category": "game:hud",
+    "description": "Advertise joinable game in progress to Steam friends, otherwise need a Steam invite",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Don't Advertise"
+            },
+            {
+              "value": "1",
+              "label": "Only Offical Server"
+            },
+            {
+              "value": "2",
+              "label": "All Server"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "ui_steam_overlay_notification_position",
+    "category": "game:hud",
+    "description": "Community Notification Location",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "topleft",
+              "label": "Top Left"
+            },
+            {
+              "value": "bottomleft",
+              "label": "Bottom Left"
+            },
+            {
+              "value": "bottomright",
+              "label": "Bottom Right"
+            },
+            {
+              "value": "topright",
+              "label": "Top Right"
+            }
+          ],
+          "def": 3
+        }
+      }
+    ]
+  },
+  {
+    "name": "ui_steam_overlay_notification_position_horz",
+    "category": "game:hud",
+    "description": "Community Notification Horizontal Offset",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 100,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "ui_steam_overlay_notification_position_vert",
+    "category": "game:hud",
+    "description": "Community Notification Vertical Offset",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 100,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "record",
+    "category": "game:demo",
+    "description": "Record a Demo",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&demo_name"
+        }
+      }
+    ]
+  },
+  {
+    "name": "_record",
+    "category": "game:demo",
+    "description": "Record a Demo Incrementally",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&demo_name"
+        }
+      }
+    ]
+  },
+  {
+    "name": "stop",
+    "category": "game:demo",
+    "description": "Stop the Record of a Demo",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&demo_name"
+        }
+      }
+    ]
+  },
+  {
+    "name": "playdemo",
+    "category": "game:demo",
+    "description": "Play a Demo",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&demo_name"
+        }
+      }
+    ]
+  },
+  {
+    "name": "startdemos",
+    "category": "game:demo",
+    "description": "Start One or Multiple Demo",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&demo_name*"
+        }
+      }
+    ]
+  },
+  {
+    "name": "nextdemo",
+    "category": "game:demo",
+    "description": "Go to Next Demo (If Specified by 'startdemos')",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "listdemo",
+    "category": "game:demo",
+    "description": "Get Content of the Demo",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&demo_name"
+        }
+      }
+    ]
+  },
+  {
+    "name": "benchframe",
+    "category": "game:demo",
+    "description": "Make a Screenshot of a Specific Frame in a Demo in Safe as JPG",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&demo_name"
+        }
+      },
+      {
+        "type": "string",
+        "value": {
+          "value": "&frame"
+        }
+      },
+      {
+        "type": "string",
+        "value": {
+          "value": "&output_name"
+        }
+      }
+    ]
+  },
+  {
+    "name": "demoui",
+    "category": "game:demo",
+    "description": "Toggle Demo UI",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "demo_info",
+    "category": "game:demo",
+    "description": "Get Info about the Demo",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "demo_pause",
+    "category": "game:demo",
+    "description": "Pause the Demo",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "demo_togglepause",
+    "category": "game:demo",
+    "description": "Toggle the Demo between Play and Pause",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "demo_resume",
+    "category": "game:demo",
+    "description": "Resume the Demo",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "demo_goto",
+    "category": "game:demo",
+    "description": "Go to Specific Time of the Demo",
+    "tooltip": "eg: 'demo_goto 6666' or 'demo_gototick 25%' or 'demo_gototick 42min'",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 100.0,
+          "def": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "demo_gototick",
+    "category": "game:demo",
+    "description": "Go to Specific Tick in the Demo",
+    "tooltip": "eg: 'demo_goto 6666' or 'demo_gototick 25%' or 'demo_gototick 42min' (Same as demo_goto?!)",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 100.0,
+          "def": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "demo_timescale",
+    "category": "game:demo",
+    "description": "Set Timescale of the Demo",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 100.0,
+          "def": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "demo_recordcommands",
+    "category": "game:demo",
+    "description": "Record Commands",
+    "tooltip": "Record commands typed at console into .dem files.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "demo_gotomark",
+    "category": "game:demo",
+    "description": "Go to a Marked Point in the Demo",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "demo_marktick",
+    "category": "game:demo",
+    "description": "Marked a Point in the Demo",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+cl_show_team_equipment",
+    "category": "game:demo",
+    "description": "Show Team Equipment Over Head",
+    "tooltip": "Same as 'cl_teamid_overhead_mode 2'.",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "cl_teamid_overhead_mode",
+    "category": "game:team",
+    "description": "Show Team Equipment Over Head",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Off"
+            },
+            {
+              "value": "1",
+              "label": "Show Location"
+            },
+            {
+              "value": "2",
+              "label": "Show Location and Equipment"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_color",
+    "category": "game:team",
+    "description": "Show Team Positions in HUD",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Blue"
+            },
+            {
+              "value": "1",
+              "label": "Green"
+            },
+            {
+              "value": "2",
+              "label": "Yellow"
+            },
+            {
+              "value": "3",
+              "label": "Orange"
+            },
+            {
+              "value": "4",
+              "label": "Purple"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_teammate_colors_show",
+    "category": "game:team",
+    "description": "Show Player Colors in Competetive",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "No"
+            },
+            {
+              "value": "1",
+              "label": "Show Colors"
+            },
+            {
+              "value": "2",
+              "label": "Colors and Letters"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_teamid_overhead_colors_show",
+    "category": "game:team",
+    "description": "Use Player Colors on Team ID",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": " lobby_default_privacy_bits",
+    "category": "game:team",
+    "description": "Friends Lobby Default Permissions",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Friends Need Invites"
+            },
+            {
+              "value": "1",
+              "label": "All Friends Can Join"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "ui_setting_advertiseforhire_auto",
+    "category": "game:team",
+    "description": "Looking to Play when Counter-Stike Starts",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Disabled"
+            },
+            {
+              "value": "1",
+              "label": "Remember Last State"
+            },
+            {
+              "value": "2",
+              "label": "Automatic"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_player_ping_mute",
+    "category": "game:communication",
+    "description": "Player Pings",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Display and Play Sound"
+            },
+            {
+              "value": "1",
+              "label": "Display Without Sound"
+            },
+            {
+              "value": "2",
+              "label": "Disabled"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "say",
+    "category": "game:communication",
+    "description": "Write in Global Chat",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&text"
+        }
+      }
+    ]
+  },
+  {
+    "name": "say_team",
+    "category": "game:communication",
+    "description": "Write in Team Chat",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&text"
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_mute_enemy_team",
+    "category": "game:communication",
+    "description": "Mute Enemy Team",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "clutch_mode_toggle",
+    "category": "actions:communication",
+    "description": "Temporarily Disable Incoming Chat",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "cl_mute_all_but_friends_and_party",
+    "category": "game:communication",
+    "description": "Mute All But Friends",
+    "tooltip": "Block communication from everyone except players you are friends with or players in your matchmaking party.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "player_ping",
+    "category": "game:communication",
+    "description": "Player Ping",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "radio",
+    "category": "game:communication",
+    "description": "Radio Message",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "radio1",
+    "category": "game:communication",
+    "description": "Command Radio Message",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "radio2",
+    "category": "game:communication",
+    "description": "Standard Radio Message",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "radio3",
+    "category": "game:communication",
+    "description": "Report Radio Message",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "messagemode",
+    "category": "game:communication",
+    "description": "Global Chat",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "messagemode2",
+    "category": "game:communication",
+    "description": "Team Chat",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+voicerecord",
+    "category": "game:communication",
+    "description": "Use Mic",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "cl_allow_animated_avatars",
+    "category": "game:communication",
+    "description": "Allow Animated Avatars",
+    "tooltip": "Whether or not to allow animated Steam avatars.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_hide_avatar_images",
+    "category": "game:communication",
+    "description": "Hide Avatar Images",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Show All"
+            },
+            {
+              "value": "1",
+              "label": "Hide All"
+            },
+            {
+              "value": "2",
+              "label": "Show Only Friends"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_sanitize_player_names",
+    "category": "game:communication",
+    "description": "Clean Player Names",
+    "tooltip": "Change names of players not on your friends list to something neutral.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "sv_alltalk",
+    "category": "game:communication",
+    "description": "Talk with Enemy Team",
+    "tooltip": "Talk with Enemy Team.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "+attack",
+    "category": "game:item",
+    "description": "Fire",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+attack2",
+    "category": "game:item",
+    "description": "Secondary Fire",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+reload",
+    "category": "game:item",
+    "description": "Reload",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "mp_drop_knife_enable",
+    "category": "game:item",
+    "description": "Enable Knive Drop",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_buy_allow_grenades",
+    "category": "game:item",
+    "description": "Enable Grenade Buy",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "+quickinv",
+    "category": "game:item",
+    "description": "Radial Weapon Menu",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "invprev",
+    "category": "game:item",
+    "description": "Select Previous Weapon",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "invnext",
+    "category": "game:item",
+    "description": "Select Next Weapon",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "lastinv",
+    "category": "game:item",
+    "description": "Last Weapon Used",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "drop",
+    "category": "game:item",
+    "description": "Drop Weapon",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "+lookatweapon",
+    "category": "game:item",
+    "description": "Inspect Weapon",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "cl_autobuy",
+    "category": "game:item",
+    "description": "Autobuy Setup",
+    "tooltip": "Setup for 'autobuy' command.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "purchasables*",
+          "is_multiple_items": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_rebuy",
+    "category": "game:item",
+    "description": "Rebuy Order",
+    "tooltip": "Setup for 'autobuy' command.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "equipment*",
+          "is_multiple_items": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "autobuy",
+    "category": "game:item",
+    "description": "Autobuy",
+    "tooltip": "Buy good setup for available money",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "rebuy",
+    "category": "game:item",
+    "description": "Rebuy",
+    "tooltip": "Buy last bought setup (with the money available)",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot1",
+    "category": "game:item",
+    "description": "Primary Weapon",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot2",
+    "category": "game:item",
+    "description": "Secondary Weapon",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot3",
+    "category": "game:item",
+    "description": "Melee Weapons",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot4",
+    "category": "game:item",
+    "description": "Cycle Grenades",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot5",
+    "category": "game:item",
+    "description": "Explosives & Traps",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot6",
+    "category": "game:item",
+    "description": "HE Grenade",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot7",
+    "category": "game:item",
+    "description": "Flashbang",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot8",
+    "category": "game:item",
+    "description": "Smoke Grenade",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot9",
+    "category": "game:item",
+    "description": "Decoy Grenade",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot10",
+    "category": "game:item",
+    "description": "Molotov Cocktail",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot11",
+    "category": "game:item",
+    "description": "Zeus x27",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot12",
+    "category": "game:item",
+    "description": "Healthshot",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "slot13",
+    "category": "game:item",
+    "description": "Utility Items",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "cl_dm_buyrandomweapons",
+    "category": "game:item",
+    "description": "Buy Random Weapons in Deathmatch",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_playerspray_auto_apply",
+    "category": "game:item",
+    "description": "Quick Graffiti (Apply With Key Release)",
+    "tooltip": "When enabled, allows you to apply graffiti quickly by pressing and releasing the graffiti menu key. When disabled, graffiti is applied only after the 'Fire' key is pressed while in the graffiti menu.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_sniper_delay_unscope",
+    "category": "game:item",
+    "description": "Delay Sniper Rifle Un-Scope after Shot",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_sniper_auto_rezoom",
+    "category": "game:item",
+    "description": "Auto Re-Zoom Sniper Rifle after Shot",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_silencer_mode",
+    "category": "game:item",
+    "description": "Detach Silencer on M4A1-S and USP-S",
+    "tooltip": "Allow or disallow the removal of silencers on the M4A1-S and USP-S.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Disabled"
+            },
+            {
+              "value": "1",
+              "label": "Secondary Fire"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "viewmodel_presetpos",
+    "category": "game:item",
+    "description": "Select Viewmodel Preset",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "None"
+            },
+            {
+              "value": "1",
+              "label": "Desktop"
+            },
+            {
+              "value": "2",
+              "label": "Couch"
+            },
+            {
+              "value": "3",
+              "label": "Classic"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_use_opens_buy_menu",
+    "category": "game:item",
+    "description": "Open Buy Menu With Use Key",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_buywheel_donate_key",
+    "category": "game:item",
+    "description": "Buy Menu Donation Key",
+    "tooltip": "Sets the key used to donate weapons directly from the Buy Menu.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Left Control"
+            },
+            {
+              "value": "1",
+              "label": "Left Alt"
+            },
+            {
+              "value": "2",
+              "label": "Left Shift"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_radar_always_centered",
+    "category": "game:radar",
+    "description": "Radar Centers The Player",
+    "tooltip": "Toggles between a radar that is centered around the player or best fit.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_radar_rotate",
+    "category": "game:radar",
+    "description": "Radar Is Rotating",
+    "tooltip": "Toggles between a radar that rotates and a radar with a fixed orientation.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_hud_radar_scale",
+    "category": "game:radar",
+    "description": "Radar HUD Size",
+    "tooltip": "Adjusts the Size of the Radar Relative to Other HUD Elements.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.8,
+          "max": 1.3,
+          "def": 0.9
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_radar_icon_scale_min",
+    "category": "game:radar",
+    "description": "Icon Radar Size",
+    "tooltip": "Adjusts the size of the icons on the radar.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.4,
+          "max": 1.25,
+          "def": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_radar_scale",
+    "category": "game:radar",
+    "description": "Radar Map Zoom",
+    "tooltip": "Map Zoom impacts the amount of the map that is visible on the radar.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.4,
+          "max": 1.0,
+          "def": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_radar_square_with_scoreboard",
+    "category": "game:radar",
+    "description": "Toggle Shape With Scoreboard",
+    "tooltip": "If set to Yes, the radar will toggle to square and display the whole map when the scoreboard is visible.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "crosshair",
+    "category": "game:radar",
+    "description": "Enable Crosshair",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshaircolor",
+    "category": "game:crosshair",
+    "description": "Color of the Crosshair",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Red"
+            },
+            {
+              "value": "1",
+              "label": "Green"
+            },
+            {
+              "value": "2",
+              "label": "Yellow"
+            },
+            {
+              "value": "3",
+              "label": "Dark Blue"
+            },
+            {
+              "value": "4",
+              "label": "Purple"
+            },
+            {
+              "value": "5",
+              "label": "Left Shift"
+            },
+            {
+              "value": "6",
+              "label": "Green"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshairstyle",
+    "category": "game:crosshair",
+    "description": "Style of the Crosshair",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "2",
+              "label": "Classic"
+            },
+            {
+              "value": "4",
+              "label": "Classic Static"
+            },
+            {
+              "value": "5",
+              "label": "Legacy"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshairgap_useweaponvalue",
+    "category": "game:radar",
+    "description": "Crosshair Based on Equipped Weapon",
+    "tooltip": "The gap will update dynamically based on which weapon is currently equipped.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshair_friendly_warning",
+    "category": "game:crosshair",
+    "description": "Friendly Fire Warning on Crosshair",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Always Off"
+            },
+            {
+              "value": "1",
+              "label": "Always On"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshairgap",
+    "category": "game:crosshair",
+    "description": "Size of the Gap in the middle of your Crosshair",
+    "tooltip": "The smaller the value, the smaller the gap.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 1,
+          "max": 60,
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshairsize",
+    "category": "game:crosshair",
+    "description": "Length of the Crosshair",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 10,
+          "def": 2
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshairthickness",
+    "category": "game:crosshair",
+    "description": "Thickness of the Crosshair",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 10.0,
+          "def": 2.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshair_drawoutline",
+    "category": "game:crosshair",
+    "description": "Draw Outline on the Crosshair",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshair_outlinethickness",
+    "category": "game:crosshair",
+    "description": "Thickness of the Crosshair",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 3.0,
+          "def": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshaircolor_r",
+    "category": "game:crosshair",
+    "description": "Red",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 255,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshaircolor_g",
+    "category": "game:crosshair",
+    "description": "Green",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 255,
+          "def": 255
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshaircolor_b",
+    "category": "game:crosshair",
+    "description": "Blue",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 255,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_crosshair_recoil",
+    "category": "game:crosshair",
+    "description": "Crosshair Follows Recoil",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Off"
+            },
+            {
+              "value": "1",
+              "label": "On"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_disable_autokick",
+    "category": "game:server",
+    "description": "Disable Autokick for a Player",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&player_id"
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_display_kill_assists",
+    "category": "game:server",
+    "description": "Display Assists",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "map",
+    "category": "game:server",
+    "description": "Load Map",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&map_name"
+        }
+      }
+    ]
+  },
+  {
+    "name": "changelevel",
+    "category": "game:server",
+    "description": "Change Map",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&map_name"
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_dm_bonus_length_min",
+    "category": "game:server",
+    "description": "Min Deathmatch Bonus Time",
+    "tooltip": "A random time between this value and mp_dm_bonus_length_max will be chosen.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 200,
+          "def": 40
+        }
+      }
+    ]
+  },
+  {
+    "name": "sv_prime_accounts_only",
+    "category": "game:server",
+    "description": "Prime Only",
+    "tooltip": "When this setting is enabled only prime users can connect to this game server.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "game_type",
+    "category": "game:server",
+    "description": "Set Game Type",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Classic"
+            },
+            {
+              "value": "1",
+              "label": "Gungame"
+            },
+            {
+              "value": "2",
+              "label": "Training"
+            },
+            {
+              "value": "3",
+              "label": "Custom"
+            },
+            {
+              "value": "4",
+              "label": "Skirmish"
+            },
+            {
+              "value": "5",
+              "label": "Cooperative"
+            },
+            {
+              "value": "9",
+              "label": "Free For All"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "game_mode",
+    "category": "game:server",
+    "description": "Set Game Mode",
+    "tooltip": "Needs to match according game type. See gamemodes list for more info.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&game_mode"
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_restartgame",
+    "category": "game:server",
+    "description": "Restarts the Game",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 1,
+          "max": 60,
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_roundtime",
+    "category": "game:server",
+    "description": "Time of a Round",
+    "tooltip": "Use mp_roundtime_defuse or mp_roundtime_hostage instead!",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 1.0,
+          "max": 60.0,
+          "def": 1.92
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_roundtime_defuse",
+    "category": "game:server",
+    "description": "Time of a Defuse Round",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 1.0,
+          "max": 60.0,
+          "def": 1.92
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_roundtime_hostage",
+    "category": "game:server",
+    "description": "Time of a Hostage Round",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 1.0,
+          "max": 60.0,
+          "def": 1.92
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_warmup_end",
+    "category": "game:server",
+    "description": "End warmup immediately",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "mp_competitive_endofmatch_extra_time",
+    "category": "game:server",
+    "description": "Extra Time After Round End",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 1000,
+          "def": 15
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_freezetime",
+    "category": "game:server",
+    "description": "Time Freezed in Spawn",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 16000,
+          "def": 800
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_c4timer",
+    "category": "game:server",
+    "description": "C4 Time After Plant",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 500,
+          "def": 40
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_ignore_round_win_conditions",
+    "category": "game:server",
+    "description": "Ignore Win Conditions",
+    "tooltip": "Ignore conditions which would end the current round eg. (Bomb detonation or team eliminated)",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_default_team_winner_no_objective",
+    "category": "game:server",
+    "description": "Default Winner No Objective",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&side"
+        }
+      }
+    ]
+  },
+  {
+    "name": "sv_infinite_ammo",
+    "category": "game:server",
+    "description": "Infinite Ammo",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Normal Ammo"
+            },
+            {
+              "value": "1",
+              "label": "Full Infinite Ammo"
+            },
+            {
+              "value": "2",
+              "label": "Infinite Ammo but Need to Reload"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_defuser_allocation",
+    "category": "game:server",
+    "description": "Defuser Allocation at Round Start",
+    "tooltip": "How to allocate defusers to CTs at start or round.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "None"
+            },
+            {
+              "value": "1",
+              "label": "Random"
+            },
+            {
+              "value": "2",
+              "label": "Everyone"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_death_drop_c4",
+    "category": "game:server",
+    "description": "Drop Bomb on Death",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_death_drop_defuser",
+    "category": "game:server",
+    "description": "Drop Defuser on Death",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_death_drop_grenade",
+    "category": "game:server",
+    "description": "Drop Grenade on Death",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "None"
+            },
+            {
+              "value": "1",
+              "label": "Best"
+            },
+            {
+              "value": "2",
+              "label": "Current"
+            },
+            {
+              "value": "3",
+              "label": "All"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_death_drop_gun",
+    "category": "game:server",
+    "description": "Drop Gun on Death",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "None"
+            },
+            {
+              "value": "1",
+              "label": "Best"
+            },
+            {
+              "value": "2",
+              "label": "Current"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_ct_default_grenades",
+    "category": "game:server",
+    "description": "Default Grenades CT",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "weapon_codes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_ct_default_melee",
+    "category": "game:server",
+    "description": "Default Meele CT",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "weapon_codes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_ct_default_primary",
+    "category": "game:server",
+    "description": "Default Primary CT",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "weapon_codes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_ct_default_secondary",
+    "category": "game:server",
+    "description": "Default Secondary CT",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "weapon_codes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_t_default_grenades",
+    "category": "game:server",
+    "description": "Default Grenades T",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "weapon_codes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_t_default_melee",
+    "category": "game:server",
+    "description": "Default Meele T",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "weapon_codes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_t_default_primary",
+    "category": "game:server",
+    "description": "Default Primary T",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "weapon_codes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_t_default_secondary",
+    "category": "game:server",
+    "description": "Default Secondary T",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "weapon_codes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "inferno_damage",
+    "category": "game:server",
+    "description": "Damage for Molotov and Incendiary",
+    "tooltip": "The damage per molotov tick is this value divided by 5. So 'inferno_damage 500' does exactly 100 damage.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 500,
+          "def": 40
+        }
+      }
+    ]
+  },
+  {
+    "name": "inferno_max_range",
+    "category": "game:server",
+    "description": "Spread Range for Molotov and Incendiary",
+    "tooltip": "Maximum distance flames can spread from their initial ignition point.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 500,
+          "def": 150
+        }
+      }
+    ]
+  },
+  {
+    "name": "inferno_flame_lifetime",
+    "category": "game:server",
+    "description": "Burn Time for Molotov and Incendiary",
+    "tooltip": "Average lifetime of each flame in seconds.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 1000,
+          "def": 7
+        }
+      }
+    ]
+  },
+  {
+    "name": "inferno_friendly_fire_duration",
+    "category": "game:server",
+    "description": "Time for Molotov and Incendiary to Count as Team Damage",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 1000,
+          "def": 6
+        }
+      }
+    ]
+  },
+  {
+    "name": "inferno_scorch_decals",
+    "category": "game:server",
+    "description": "Molotovs and Incendiary Leave Scorch Decals",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "sv_showimpacts",
+    "category": "game:server",
+    "description": "Shows client (red) and server (blue) bullet impact point",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Off"
+            },
+            {
+              "value": "1",
+              "label": "Client and Server"
+            },
+            {
+              "value": "2",
+              "label": "Only Client"
+            },
+            {
+              "value": "3",
+              "label": "Only Server"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "sv_showimpacts_time",
+    "category": "game:server",
+    "description": "Duration bullet impact indicators remain before disappearing",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 10,
+          "def": 4
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_limitteams",
+    "category": "game:server",
+    "description": "Max quantity of players one team can have over another",
+    "tooltip": "This command sets the maximum amount of different in players that there can be between two teams. If this was set to 1, if the CT team had 3 and T team had 2, a new player would not be able to join the CT team. Setting this to 0 disables the check. Default is 2.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 30,
+          "def": 2
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_autoteambalance",
+    "category": "game:server",
+    "description": "Swap teams to balance out if teams are uneven.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "sv_cheats",
+    "category": "game:server",
+    "description": "Enable Cheats on Server",
+    "tooltip": "Needed for Other Commands to Work; Needs Admin Rights (e.g. Lobbyleader)",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "bot_difficulty",
+    "category": "game:server",
+    "description": "Set Bot Difficulty",
+    "tooltip": ".",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "difficulties",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "bot_quota",
+    "category": "game:server",
+    "description": "Bot Quota",
+    "tooltip": "Determines the total number of bots in the game.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 100,
+          "def": 10
+        }
+      }
+    ]
+  },
+  {
+    "name": "bot_add",
+    "category": "game:server",
+    "description": "Add bot",
+    "tooltip": "This will add a bot to the side with less players. You can specify a difficulty and a name, but the name must exist as a bot profile.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&side"
+        }
+      },
+      {
+        "type": "table",
+        "value": {
+          "table_name": "difficulties",
+          "is_multiple_items": false
+        }
+      },
+      {
+        "type": "table",
+        "value": {
+          "table_name": "bot_profiles",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "bot_add_t",
+    "category": "game:server",
+    "description": "Add bot to the T Side",
+    "tooltip": "This will add a bot to the T Side. You can specify a difficulty and a name, but the name must exist as a bot profile.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&side"
+        }
+      },
+      {
+        "type": "table",
+        "value": {
+          "table_name": "difficulties",
+          "is_multiple_items": false
+        }
+      },
+      {
+        "type": "table",
+        "value": {
+          "table_name": "bot_profiles",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "bot_add_ct",
+    "category": "game:server",
+    "description": "Add bot to the CT Side",
+    "tooltip": "This will add a bot to the CT Side. You can specify a difficulty and a name, but the name must exist as a bot profile.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&side"
+        }
+      },
+      {
+        "type": "table",
+        "value": {
+          "table_name": "difficulties",
+          "is_multiple_items": false
+        }
+      },
+      {
+        "type": "table",
+        "value": {
+          "table_name": "bot_profiles",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_bot_stop",
+    "category": "game:server",
+    "description": "Freeze Bots",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "no",
+              "label": "No"
+            },
+            {
+              "value": "all",
+              "label": "Yes"
+            },
+            {
+              "value": "not_bomber",
+              "label": "Not Bomber"
+            },
+            {
+              "value": "t",
+              "label": "Only Ts"
+            },
+            {
+              "value": "ct",
+              "label": "Only CTs"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "bot_mimic",
+    "category": "game:server",
+    "description": "Bots Use Players Input",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "No"
+            },
+            {
+              "value": "1",
+              "label": "Yes"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "bot_mimic_yaw_offset",
+    "category": "game:server",
+    "description": "This command will set the yaw offset that bots will mimic you on",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 1000,
+          "def": 180
+        }
+      }
+    ]
+  },
+  {
+    "name": "bot_mimic_spec_buttons",
+    "category": "game:server",
+    "description": "+attack, +jump etc are used for spectator control instead of being passed on to spectated bot",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_solid_teammates",
+    "category": "game:server",
+    "description": "Are Teammates Solid",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "No"
+            },
+            {
+              "value": "1",
+              "label": "Yes"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_startmoney",
+    "category": "game:server",
+    "description": "Start Money",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 16000,
+          "def": 800
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_afterroundmoney",
+    "category": "game:server",
+    "description": "Money After a Round",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 16000,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_loser_bonus",
+    "category": "game:server",
+    "description": "Loser Bonus",
+    "tooltip": "Money for losing the round.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 1400
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_loser_bonus_consecutive_rounds",
+    "category": "game:server",
+    "description": "Loser Bonus Extra",
+    "tooltip": "Consecutive Bonus Money for every next lost round.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 500
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_winner_bonus_consecutive_rounds",
+    "category": "game:server",
+    "description": "Loser Bonus Extra",
+    "tooltip": "Consecutive Bonus Money for every won round.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_win_by_defusing_bomb",
+    "category": "game:server",
+    "description": "Money for Winning by Defuse",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 3500
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_win_by_time_running_out_bomb",
+    "category": "game:server",
+    "description": "Money for Winning by Time on Defusal Map",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 3250
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_win_by_time_running_out_hostage",
+    "category": "game:server",
+    "description": "Money for Winning by Time oncash_team_winner_bonus_consecutive_rounds Hostage Map",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 3250
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_win_by_hostage_rescue",
+    "category": "game:server",
+    "description": "Money for Winning by Rescue",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 2900
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_terrorist_win_bomb",
+    "category": "game:server",
+    "description": "Shorthanded bonus",
+    "tooltip": "Money for Planting and Winning a Round",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 3500
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_planted_bomb_but_defused",
+    "category": "game:server",
+    "description": "Shorthanded bonus",
+    "tooltip": "Bonus Money for Planting but Losing to Defuse as T",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 800
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_bonus_shorthanded",
+    "category": "game:server",
+    "description": "Shorthanded bonus",
+    "tooltip": "Bonus for having a teammate less.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 1000
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_elimination_bomb_map",
+    "category": "game:server",
+    "description": "Money for Won Round in Defusal",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 3250
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_elimination_hostage_map_ct",
+    "category": "game:server",
+    "description": "Money for Won Round in Hostage as CT",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 3000
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_elimination_hostage_map_t",
+    "category": "game:server",
+    "description": "Money for Won Round in Hostage as T",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 3000
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_rescued_hostage",
+    "category": "game:server",
+    "description": "Team Money for Rescuing Hostage",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 600
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_team_hostage_alive",
+    "category": "game:server",
+    "description": "Money for Hostage Alive at Round End",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_killed_enemy_default",
+    "category": "game:server",
+    "description": "Default Kill Reward",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 300
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_killed_enemy_factor",
+    "category": "game:server",
+    "description": "Multiply Factor for Kill Reward",
+    "tooltip": "Default kill reward gets multiplied by the value. Can be used with negative numbers for kill punishment.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": -100.0,
+          "max": 100.0,
+          "def": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_bomb_defused",
+    "category": "game:server",
+    "description": "Money for Defuse",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 300
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_bomb_planted",
+    "category": "game:server",
+    "description": "Money for Bomb Plant",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 300
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_rescued_hostage",
+    "category": "game:server",
+    "description": "Money for Rescuing Hostage",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 1000
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_damage_hostage",
+    "category": "game:server",
+    "description": "Money for Hostage Damage",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": -30
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_killed_hostage",
+    "category": "game:server",
+    "description": "Money for Killing Hostage",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": -1000
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_get_killed",
+    "category": "game:server",
+    "description": "Money for Getting Killed",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_killed_teammate",
+    "category": "game:server",
+    "description": "Money for Killing Teammate",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": -300
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_interact_with_hostage",
+    "category": "game:server",
+    "description": "Money for Interacting with Hostage",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 300
+        }
+      }
+    ]
+  },
+  {
+    "name": "cash_player_respawn_amount",
+    "category": "game:server",
+    "description": "Money for Respawning",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": -16000,
+          "max": 16000,
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_buy_anywhere",
+    "category": "game:server",
+    "description": "Buy Anywhere",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "No"
+            },
+            {
+              "value": "1",
+              "label": "Yes"
+            },
+            {
+              "value": "2",
+              "label": "Only T"
+            },
+            {
+              "value": "3",
+              "label": "Only CT"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_buytime",
+    "category": "game:server",
+    "description": "Buy Time after Round Start in Seconds",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "int",
+        "value": {
+          "min": 0,
+          "max": 100000,
+          "def": 90
+        }
+      }
+    ]
+  },
+  {
+    "name": "mp_buy_during_immunity",
+    "category": "game:server",
+    "description": "Buy During Immunity",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Disabled"
+            },
+            {
+              "value": "1",
+              "label": "Both Teams"
+            },
+            {
+              "value": "2",
+              "label": "Only Ts"
+            },
+            {
+              "value": "3",
+              "label": "Only CTs"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "con_enable",
+    "category": "game:config",
+    "description": "Enable Console (Recommended!)",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "clear",
+    "category": "game:config",
+    "description": "Clear the Console",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "exec",
+    "category": "game:config",
+    "description": "Executes a Config File",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "configname"
+        }
+      }
+    ]
+  },
+  {
+    "name": "host_writeconfig",
+    "category": "game:config",
+    "description": "Saves out a user config values",
+    "tooltip": "Saves in config.cfg if no name is given.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&configname"
+        }
+      }
+    ]
+  },
+  {
+    "name": "listissues",
+    "category": "game:config",
+    "description": "List Issues",
+    "tooltip": "List in your developer console of the different things you can vote for in your server . This includes voting to change the map and voting to kick a player.",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "alias",
+    "category": "game:config",
+    "description": "Alias a command",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "placeholder": "Alias name"
+        }
+      },
+      {
+        "type": "table",
+        "value": {
+          "table_name": "commands",
+          "is_multiple_items": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "bind",
+    "category": "game:config",
+    "description": "Bind a Key",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "keycodes",
+          "is_multiple_items": false
+        }
+      },
+      {
+        "type": "table",
+        "value": {
+          "table_name": "commands",
+          "is_multiple_items": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "unbind",
+    "category": "game:config",
+    "description": "Unbind a Key",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "keycodes",
+          "is_multiple_items": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "unbindall",
+    "category": "game:config",
+    "description": "Unbind All Keybinds!",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "key_listboundkeys",
+    "category": "game:config",
+    "description": "List All Keybids",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "toggle",
+    "category": "game:config",
+    "description": "Toggles specified convar value on and off",
+    "tooltip": "Optionaly you can specify values to toggle between.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "table",
+        "value": {
+          "table_name": "commands",
+          "is_multiple_items": false
+        }
+      },
+      {
+        "type": "string",
+        "value": {
+          "value": "&values"
+        }
+      }
+    ]
+  },
+  {
+    "name": "echo",
+    "category": "game:config",
+    "description": "Write in Console",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "string",
+        "value": {
+          "value": "&text"
+        }
+      }
+    ]
+  },
+  {
+    "name": "cq_netgraph",
+    "category": "game:config",
+    "description": "Net Graph",
+    "tooltip": "Display command queue statistics on the HUD",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Off"
+            },
+            {
+              "value": "1",
+              "label": "On"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "volume",
+    "category": "audio:audio",
+    "description": "Main Volume of the game",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 1.0,
+          "def": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_headphone_eq",
+    "category": "audio:audio",
+    "description": "EQ Profile",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "0",
+              "label": "Natural"
+            },
+            {
+              "value": "1",
+              "label": "Crisp"
+            },
+            {
+              "value": "2",
+              "label": "Smooth"
+            }
+          ],
+          "def": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_steamaudio_enable_perspective_correction",
+    "category": "audio:audio",
+    "description": "Perspective Correction",
+    "tooltip": "<b>Yes (default):</b> Sound sources will be rendered accurately with respect to your field of view as you look at the pc screen. Sound emitters that are on the edge of your field of view will sound slightly in front of you. Sound emitters that are off-screen and directly to your side will sound fully panned to either L or R respectively.<br/><br/><b>No:</b> Sound emitters at the edge of your field of view will sound strongly panned to either L or R respectively. Ideal for those who play very close to the screen, or use wearable screens, or players that prefer legacy sound engines. Can be positionally misleading at certain angles to the listener.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "voice_modenable",
+    "category": "audio:audio",
+    "description": "Enable Voice",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_voipvolume",
+    "category": "audio:music",
+    "description": "Player Voice Scale",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 1.0,
+          "def": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "voice_modenable_toggle",
+    "category": "audio:audio",
+    "description": "Toggles Ingame Voice",
+    "tooltip": "Good for 'mute binds', to disable voice communication in clutch situations",
+    "sv_cheats": false,
+    "parameters": []
+  },
+  {
+    "name": "snd_menumusic_volume",
+    "category": "audio:music",
+    "description": "Main Menu Music Volume",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 1.0,
+          "def": 0.04
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_roundstart_volume",
+    "category": "audio:music",
+    "description": "Round Start Music Volume",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 1.0,
+          "def": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_roundaction_volume",
+    "category": "audio:music",
+    "description": "Round Action Music Volume",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 1.0,
+          "def": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_mvp_volume",
+    "category": "audio:music",
+    "description": "MVP Music Volume",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 1.0,
+          "def": 0.16
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_mapobjective_volume",
+    "category": "audio:music",
+    "description": "Bomb / Hostage Volume",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 1.0,
+          "def": 0.04
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_tensecondwarning_volume",
+    "category": "audio:music",
+    "description": "Ten Second Warning Volume",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 1.0,
+          "def": 0.04
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_deathcamera_volume",
+    "category": "audio:music",
+    "description": "Death Camera Volume",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.0,
+          "max": 1.0,
+          "def": 0.16
+        }
+      }
+    ]
+  },
+  {
+    "name": "snd_mute_mvp_music_live_players",
+    "category": "audio:music",
+    "description": "Mute MVP Sound when players on both teams are alive",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "mouse_inverty",
+    "category": "mouse",
+    "description": "Reverse Mouse",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "bool",
+        "value": {
+          "def": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "sensitivity",
+    "category": "mouse",
+    "description": "Mouse Sensivity",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.1,
+          "max": 8.0,
+          "def": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "name": "zoom_sensitivity_ratio",
+    "category": "mouse",
+    "description": "Zoom Sensivity Multiplier",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "float",
+        "value": {
+          "min": 0.01,
+          "max": 3.0,
+          "def": 0.818933
+        }
+      }
+    ]
+  },
+  {
+    "name": "cl_debounce_zoom",
+    "category": "mouse",
+    "description": "Zoom Button Hold",
+    "tooltip": "Whether or not holding the zoom button should behave as if it was pressed repeatedly.",
+    "sv_cheats": false,
+    "parameters": [
+      {
+        "type": "enum",
+        "value": {
+          "options": [
+            {
+              "value": "false",
+              "label": "Repeat Enabled"
+            },
+            {
+              "value": "true",
+              "label": "Repeat Disabled"
+            }
+          ],
+          "def": 0
+        }
+      }
+    ]
+  }
+]

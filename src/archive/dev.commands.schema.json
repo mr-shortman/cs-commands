@@ -1,0 +1,148 @@
+{
+  "$ref": "#/definitions/CSRawCommandConfig",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "CSCommandParameter": {
+      "anyOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "int",
+              "type": "string"
+            },
+            "value": {
+              "additionalProperties": false,
+              "properties": {
+                "def": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                },
+                "min": {
+                  "type": "number"
+                },
+                "step": {
+                  "type": "number"
+                }
+              },
+              "required": ["min", "max", "def"],
+              "type": "object"
+            }
+          },
+          "required": ["type", "value"],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "enum",
+              "type": "string"
+            },
+            "value": {
+              "additionalProperties": false,
+              "properties": {
+                "def": {
+                  "type": "string"
+                },
+                "options": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "label": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "string"
+                      }
+                    },
+                    "required": ["value", "label"],
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": ["options", "def"],
+              "type": "object"
+            }
+          },
+          "required": ["type", "value"],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "const": "bool",
+              "type": "string"
+            },
+            "value": {
+              "additionalProperties": false,
+              "properties": {
+                "def": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["def"],
+              "type": "object"
+            }
+          },
+          "required": ["type", "value"],
+          "type": "object"
+        }
+      ]
+    },
+    "CSRawCommandConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "commands": {
+          "items": {
+            "$ref": "#/definitions/RawCommand"
+          },
+          "type": "array"
+        }
+      },
+      "required": ["commands"],
+      "type": "object"
+    },
+    "RawCommand": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "metadata": {
+          "additionalProperties": false,
+          "properties": {
+            "category": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "sv_cheats": {
+              "type": "boolean"
+            },
+            "tooltip": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "name": {
+          "type": "string"
+        },
+        "parameters": {
+          "items": {
+            "$ref": "#/definitions/CSCommandParameter"
+          },
+          "type": "array"
+        }
+      },
+      "required": ["label", "name", "parameters"],
+      "type": "object"
+    }
+  }
+}

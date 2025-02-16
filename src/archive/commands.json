@@ -1,0 +1,160 @@
+{
+  "$schema": "./dev.data.schema.json",
+  "Game": {
+    "Team": [
+      {
+        "label": "Show Team ID Trough Walls",
+        "command": "cl_teamid_overhead_mode",
+        "options": {
+          "off": "0",
+          "PIPS": "1",
+          "PIPS, NAMES AND HEALTH": "2",
+          "PIPS, NAMES, HEALTH AND EQUIPMENT": "3"
+        }
+      },
+      {
+        "label": "Show Player Colors in Competetive",
+        "command": "cl_teammate_colors_show",
+        "options": {
+          "no": "0",
+          "show colors": "1",
+          "colors and letters": "2"
+        }
+      },
+      {
+        "label": "Use Player Colors on Team ID",
+        "command": "cl_teamid_overhead_colors_show",
+        "options": {
+          "NO": "0",
+          "YES": "1"
+        }
+      },
+      {
+        "label": "Friends Lobby Default Permission",
+        "command": "lobby_default_privacy_bits2",
+        "options": {
+          "friends need invites": "0",
+          "all friends can join": "1"
+        }
+      },
+      {
+        "label": "Looking to Play when Counter-Strike Starts",
+        "command": "ui_setting_advertiseforhire_auto",
+        "options": {
+          "Disabled": "0",
+          "Remember Last State": "1",
+          "Automatic": "2"
+        }
+      },
+      {
+        "label": "TEST: Added by Submodule",
+        "command": "cl_submodule",
+        "options": {
+          "No": "0",
+          "Yes": "1"
+        }
+      },
+      {
+        "label": "One MORE TEST: Added by Submodule",
+        "command": "cl_submodule_test",
+        "options": {
+          "No": "0",
+          "Yes": "1"
+        }
+      }
+    ],
+    "Communication": [
+      {
+        "label": "Player Pings",
+        "command": "cl_player_ping_mute",
+        "options": {
+          "Display and play Sound": "0",
+          "Display without sound": "1",
+          "Disabled": "2"
+        }
+      },
+      {
+        "label": "Mute Enemy Team",
+        "command": "cl_mute_enemy_team",
+        "options": {
+          "No": "0",
+          "Yes": "1"
+        }
+      },
+      {
+        "label": "Mute all but friends",
+        "command": "cl_mute_all_but_friends_and_party",
+        "options": {
+          "No": "0",
+          "Only in non-competetive modes": "1",
+          "Always": "2"
+        }
+      },
+      {
+        "label": "Allow animated avatars",
+        "command": "cl_allow_animated_avatars",
+        "options": {
+          "No": "0",
+          "Yes": "1"
+        }
+      },
+      {
+        "label": "Hide Avatar images and customized images",
+        "command": "cl_hide_avatar_images",
+        "options": {
+          "Show All": "0",
+          "Hide All": "1",
+          "Show Only Friends": "2"
+        }
+      },
+      {
+        "label": "Clean player names",
+        "command": "cl_sanitize_player_names",
+        "options": {
+          "No": "0",
+          "Yes": "1"
+        }
+      }
+    ]
+  },
+  "Audio": {
+    "Microphone": [
+      {
+        "label": "Voice Threshold",
+        "command": "voice_threshold",
+        "options": {
+          "number": "2000",
+          "min": "0",
+          "max": "10000"
+        }
+      },
+      {
+        "label": "Test Slider With Step",
+        "command": "test_test",
+        "options": {
+          "number": "10",
+          "min": "0",
+          "max": "50",
+          "step": "5"
+        }
+      }
+    ],
+
+    "Music": []
+  },
+
+  "Other": {
+    "Category": [
+      {
+        "label": "Show Team ID Trough Walls",
+        "command": "cl_teamid_overhead_mode",
+        "options": {
+          "off": "0",
+          "PIPS": "1",
+          "PIPS, NAMES AND HEALTH": "2",
+          "PIPS, NAMES, HEALTH AND EQUIPMENT": "3"
+        }
+      }
+    ]
+  }
+}

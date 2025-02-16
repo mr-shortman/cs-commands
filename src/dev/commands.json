@@ -1,0 +1,4267 @@
+{
+  "commands": [
+    {
+      "name": "mm_dedicated_search_maxping",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 350,
+            "def": 100
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "rate",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "98304",
+                "label": "Extremely restricted"
+              },
+              {
+                "value": "131072",
+                "label": "Below 1.0 Mbps"
+              },
+              {
+                "value": "196608",
+                "label": "Up to 1.5 Mbps"
+              },
+              {
+                "value": "262144",
+                "label": "Up to 2.0 Mbps"
+              },
+              {
+                "value": "327680",
+                "label": "Up to 2.5 Mbps"
+              },
+              {
+                "value": "393216",
+                "label": "3 Mbps"
+              },
+              {
+                "value": "524288",
+                "label": "4 Mbps"
+              },
+              {
+                "value": "786432",
+                "label": "Unrestricted"
+              }
+            ],
+            "def": 7
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "fps_max",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1000,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "give",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "weapon_codes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "buy",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "purchasables",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "hurtme",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&damage_amount"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_pitchup",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 180,
+            "def": 89
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_pitchdown",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 180,
+            "def": 89
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "viewmodel_fov",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 54,
+            "max": 68,
+            "def": 60
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "viewmodel_offset_x",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -2,
+            "max": 2,
+            "def": 2
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "viewmodel_offset_y",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -2,
+            "max": 2,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "viewmodel_offset_z",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -2,
+            "max": 2,
+            "def": -2
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "joy_movement_stick",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "notarget",
+      "parameters": [],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+use",
+      "parameters": [],
+      "metadata": {
+        "category": "game:game",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+forward",
+      "parameters": [],
+      "metadata": {
+        "category": "game:movement",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+back",
+      "parameters": [],
+      "metadata": {
+        "category": "game:movement",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+left",
+      "parameters": [],
+      "metadata": {
+        "category": "game:movement",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+right",
+      "parameters": [],
+      "metadata": {
+        "category": "game:movement",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+sprint",
+      "parameters": [],
+      "metadata": {
+        "category": "game:movement",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+jump",
+      "parameters": [],
+      "metadata": {
+        "category": "game:movement",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "noclip",
+      "parameters": [],
+      "metadata": {
+        "category": "game:movement",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "sv_autobunnyhopping",
+      "parameters": [],
+      "metadata": {
+        "category": "game:movement",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "buymenu",
+      "parameters": [],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+spray_menu",
+      "parameters": [],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "toggleconsole",
+      "parameters": [],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_deathcam_skippable",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "disconnect",
+      "parameters": [],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "quit",
+      "parameters": [],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+showscores",
+      "parameters": [],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "teammenu",
+      "parameters": [],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cancelselect",
+      "parameters": [],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "safezonex",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0.45,
+            "max": 1,
+            "def": 0.968
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "safezoney",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0.8,
+            "max": 1,
+            "def": 0.946
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "callvote",
+      "parameters": [],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_draw_only_deathnotices",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_hud_color",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Team Color"
+              },
+              {
+                "value": "1",
+                "label": "Player Color"
+              },
+              {
+                "value": "2",
+                "label": "White"
+              },
+              {
+                "value": "3",
+                "label": "Bright White"
+              },
+              {
+                "value": "4",
+                "label": "Light Blue"
+              },
+              {
+                "value": "5",
+                "label": "Blue"
+              },
+              {
+                "value": "6",
+                "label": "Purple"
+              },
+              {
+                "value": "7",
+                "label": "Red"
+              },
+              {
+                "value": "8",
+                "label": "Orange"
+              },
+              {
+                "value": "9",
+                "label": "Yellow"
+              },
+              {
+                "value": "10",
+                "label": "Green"
+              },
+              {
+                "value": "11",
+                "label": "Aqua"
+              },
+              {
+                "value": "12",
+                "label": "Pink"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_teamcounter_playercount_instead_of_avatars",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "r_show_build_info",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_show_clan_in_death_notice",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_showpos",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Off"
+              },
+              {
+                "value": "1",
+                "label": "On"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_showfps",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "No"
+              },
+              {
+                "value": "1",
+                "label": "Only FPS"
+              },
+              {
+                "value": "2",
+                "label": "FPS + Avarage, Min, Max"
+              },
+              {
+                "value": "3",
+                "label": "Server Ticks"
+              },
+              {
+                "value": "4",
+                "label": "Avg FPS, Frame MS, Frame Server Ms"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_join_advertise",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Don't Advertise"
+              },
+              {
+                "value": "1",
+                "label": "Only Offical Server"
+              },
+              {
+                "value": "2",
+                "label": "All Server"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "ui_steam_overlay_notification_position",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "topleft",
+                "label": "Top Left"
+              },
+              {
+                "value": "bottomleft",
+                "label": "Bottom Left"
+              },
+              {
+                "value": "bottomright",
+                "label": "Bottom Right"
+              },
+              {
+                "value": "topright",
+                "label": "Top Right"
+              }
+            ],
+            "def": 3
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "ui_steam_overlay_notification_position_horz",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 100,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "ui_steam_overlay_notification_position_vert",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 100,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:hud",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "record",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&demo_name"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "_record",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&demo_name"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "stop",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&demo_name"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "playdemo",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&demo_name"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "startdemos",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&demo_name*"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "nextdemo",
+      "parameters": [],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "listdemo",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&demo_name"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "benchframe",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&demo_name"
+          }
+        },
+        {
+          "type": "string",
+          "value": {
+            "value": "&frame"
+          }
+        },
+        {
+          "type": "string",
+          "value": {
+            "value": "&output_name"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demoui",
+      "parameters": [],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_info",
+      "parameters": [],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_pause",
+      "parameters": [],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_togglepause",
+      "parameters": [],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_resume",
+      "parameters": [],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_goto",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 100,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_gototick",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 100,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_timescale",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 100,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_recordcommands",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_gotomark",
+      "parameters": [],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "demo_marktick",
+      "parameters": [],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+cl_show_team_equipment",
+      "parameters": [],
+      "metadata": {
+        "category": "game:demo",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_teamid_overhead_mode",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Off"
+              },
+              {
+                "value": "1",
+                "label": "Show Location"
+              },
+              {
+                "value": "2",
+                "label": "Show Location and Equipment"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:team",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_color",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Blue"
+              },
+              {
+                "value": "1",
+                "label": "Green"
+              },
+              {
+                "value": "2",
+                "label": "Yellow"
+              },
+              {
+                "value": "3",
+                "label": "Orange"
+              },
+              {
+                "value": "4",
+                "label": "Purple"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:team",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_teammate_colors_show",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "No"
+              },
+              {
+                "value": "1",
+                "label": "Show Colors"
+              },
+              {
+                "value": "2",
+                "label": "Colors and Letters"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:team",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_teamid_overhead_colors_show",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:team",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": " lobby_default_privacy_bits",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Friends Need Invites"
+              },
+              {
+                "value": "1",
+                "label": "All Friends Can Join"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:team",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "ui_setting_advertiseforhire_auto",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Disabled"
+              },
+              {
+                "value": "1",
+                "label": "Remember Last State"
+              },
+              {
+                "value": "2",
+                "label": "Automatic"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:team",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_player_ping_mute",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Display and Play Sound"
+              },
+              {
+                "value": "1",
+                "label": "Display Without Sound"
+              },
+              {
+                "value": "2",
+                "label": "Disabled"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "say",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&text"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "say_team",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&text"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_mute_enemy_team",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "clutch_mode_toggle",
+      "parameters": [],
+      "metadata": {
+        "category": "actions:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_mute_all_but_friends_and_party",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "player_ping",
+      "parameters": [],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "radio",
+      "parameters": [],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "radio1",
+      "parameters": [],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "radio2",
+      "parameters": [],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "radio3",
+      "parameters": [],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "messagemode",
+      "parameters": [],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "messagemode2",
+      "parameters": [],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+voicerecord",
+      "parameters": [],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_allow_animated_avatars",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_hide_avatar_images",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Show All"
+              },
+              {
+                "value": "1",
+                "label": "Hide All"
+              },
+              {
+                "value": "2",
+                "label": "Show Only Friends"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_sanitize_player_names",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "sv_alltalk",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:communication",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+attack",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+attack2",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+reload",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_drop_knife_enable",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_buy_allow_grenades",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+quickinv",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "invprev",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "invnext",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "lastinv",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "drop",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "+lookatweapon",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_autobuy",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "purchasables*",
+            "is_multiple_items": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_rebuy",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "equipment*",
+            "is_multiple_items": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "autobuy",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "rebuy",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot1",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot2",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot3",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot4",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot5",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot6",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot7",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot8",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot9",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot10",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot11",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot12",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "slot13",
+      "parameters": [],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_dm_buyrandomweapons",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_playerspray_auto_apply",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_sniper_delay_unscope",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_sniper_auto_rezoom",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_silencer_mode",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Disabled"
+              },
+              {
+                "value": "1",
+                "label": "Secondary Fire"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "viewmodel_presetpos",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "None"
+              },
+              {
+                "value": "1",
+                "label": "Desktop"
+              },
+              {
+                "value": "2",
+                "label": "Couch"
+              },
+              {
+                "value": "3",
+                "label": "Classic"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_use_opens_buy_menu",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_buywheel_donate_key",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Left Control"
+              },
+              {
+                "value": "1",
+                "label": "Left Alt"
+              },
+              {
+                "value": "2",
+                "label": "Left Shift"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:item",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_radar_always_centered",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:radar",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_radar_rotate",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:radar",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_hud_radar_scale",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0.8,
+            "max": 1.3,
+            "def": 0.9
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:radar",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_radar_icon_scale_min",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0.4,
+            "max": 1.25,
+            "def": 0.6
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:radar",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_radar_scale",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0.4,
+            "max": 1,
+            "def": 0.5
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:radar",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_radar_square_with_scoreboard",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:radar",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "crosshair",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:radar",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshaircolor",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Red"
+              },
+              {
+                "value": "1",
+                "label": "Green"
+              },
+              {
+                "value": "2",
+                "label": "Yellow"
+              },
+              {
+                "value": "3",
+                "label": "Dark Blue"
+              },
+              {
+                "value": "4",
+                "label": "Purple"
+              },
+              {
+                "value": "5",
+                "label": "Left Shift"
+              },
+              {
+                "value": "6",
+                "label": "Green"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshairstyle",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "2",
+                "label": "Classic"
+              },
+              {
+                "value": "4",
+                "label": "Classic Static"
+              },
+              {
+                "value": "5",
+                "label": "Legacy"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshairgap_useweaponvalue",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:radar",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshair_friendly_warning",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Always Off"
+              },
+              {
+                "value": "1",
+                "label": "Always On"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshairgap",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 1,
+            "max": 60,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshairsize",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 10,
+            "def": 2
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshairthickness",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 10,
+            "def": 2
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshair_drawoutline",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshair_outlinethickness",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 3,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshaircolor_r",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 255,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshaircolor_g",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 255,
+            "def": 255
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshaircolor_b",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 255,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_crosshair_recoil",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Off"
+              },
+              {
+                "value": "1",
+                "label": "On"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:crosshair",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_disable_autokick",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&player_id"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_display_kill_assists",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "map",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&map_name"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "changelevel",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&map_name"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_dm_bonus_length_min",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 200,
+            "def": 40
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "sv_prime_accounts_only",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "game_type",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Classic"
+              },
+              {
+                "value": "1",
+                "label": "Gungame"
+              },
+              {
+                "value": "2",
+                "label": "Training"
+              },
+              {
+                "value": "3",
+                "label": "Custom"
+              },
+              {
+                "value": "4",
+                "label": "Skirmish"
+              },
+              {
+                "value": "5",
+                "label": "Cooperative"
+              },
+              {
+                "value": "9",
+                "label": "Free For All"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "game_mode",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&game_mode"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_restartgame",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 1,
+            "max": 60,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_roundtime",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 1,
+            "max": 60,
+            "def": 1.92
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_roundtime_defuse",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 1,
+            "max": 60,
+            "def": 1.92
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_roundtime_hostage",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 1,
+            "max": 60,
+            "def": 1.92
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_warmup_end",
+      "parameters": [],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_competitive_endofmatch_extra_time",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1000,
+            "def": 15
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_freezetime",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 16000,
+            "def": 800
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_c4timer",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 500,
+            "def": 40
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_ignore_round_win_conditions",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_default_team_winner_no_objective",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&side"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "sv_infinite_ammo",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Normal Ammo"
+              },
+              {
+                "value": "1",
+                "label": "Full Infinite Ammo"
+              },
+              {
+                "value": "2",
+                "label": "Infinite Ammo but Need to Reload"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_defuser_allocation",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "None"
+              },
+              {
+                "value": "1",
+                "label": "Random"
+              },
+              {
+                "value": "2",
+                "label": "Everyone"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_death_drop_c4",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_death_drop_defuser",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_death_drop_grenade",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "None"
+              },
+              {
+                "value": "1",
+                "label": "Best"
+              },
+              {
+                "value": "2",
+                "label": "Current"
+              },
+              {
+                "value": "3",
+                "label": "All"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_death_drop_gun",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "None"
+              },
+              {
+                "value": "1",
+                "label": "Best"
+              },
+              {
+                "value": "2",
+                "label": "Current"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_ct_default_grenades",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "weapon_codes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_ct_default_melee",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "weapon_codes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_ct_default_primary",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "weapon_codes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_ct_default_secondary",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "weapon_codes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_t_default_grenades",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "weapon_codes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_t_default_melee",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "weapon_codes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_t_default_primary",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "weapon_codes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_t_default_secondary",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "weapon_codes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "inferno_damage",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 500,
+            "def": 40
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "inferno_max_range",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 500,
+            "def": 150
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "inferno_flame_lifetime",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1000,
+            "def": 7
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "inferno_friendly_fire_duration",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1000,
+            "def": 6
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "inferno_scorch_decals",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "sv_showimpacts",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Off"
+              },
+              {
+                "value": "1",
+                "label": "Client and Server"
+              },
+              {
+                "value": "2",
+                "label": "Only Client"
+              },
+              {
+                "value": "3",
+                "label": "Only Server"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "sv_showimpacts_time",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 10,
+            "def": 4
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_limitteams",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 30,
+            "def": 2
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_autoteambalance",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "sv_cheats",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "bot_difficulty",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "difficulties",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "bot_quota",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 100,
+            "def": 10
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "bot_add",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&side"
+          }
+        },
+        {
+          "type": "table",
+          "value": {
+            "table_name": "difficulties",
+            "is_multiple_items": false
+          }
+        },
+        {
+          "type": "table",
+          "value": {
+            "table_name": "bot_profiles",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "bot_add_t",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&side"
+          }
+        },
+        {
+          "type": "table",
+          "value": {
+            "table_name": "difficulties",
+            "is_multiple_items": false
+          }
+        },
+        {
+          "type": "table",
+          "value": {
+            "table_name": "bot_profiles",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "bot_add_ct",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&side"
+          }
+        },
+        {
+          "type": "table",
+          "value": {
+            "table_name": "difficulties",
+            "is_multiple_items": false
+          }
+        },
+        {
+          "type": "table",
+          "value": {
+            "table_name": "bot_profiles",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_bot_stop",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "no",
+                "label": "No"
+              },
+              {
+                "value": "all",
+                "label": "Yes"
+              },
+              {
+                "value": "not_bomber",
+                "label": "Not Bomber"
+              },
+              {
+                "value": "t",
+                "label": "Only Ts"
+              },
+              {
+                "value": "ct",
+                "label": "Only CTs"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "bot_mimic",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "No"
+              },
+              {
+                "value": "1",
+                "label": "Yes"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "bot_mimic_yaw_offset",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1000,
+            "def": 180
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "bot_mimic_spec_buttons",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_solid_teammates",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "No"
+              },
+              {
+                "value": "1",
+                "label": "Yes"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_startmoney",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 16000,
+            "def": 800
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_afterroundmoney",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 16000,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_loser_bonus",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 1400
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_loser_bonus_consecutive_rounds",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 500
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_winner_bonus_consecutive_rounds",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_win_by_defusing_bomb",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 3500
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_win_by_time_running_out_bomb",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 3250
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_win_by_time_running_out_hostage",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 3250
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_win_by_hostage_rescue",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 2900
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_terrorist_win_bomb",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 3500
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_planted_bomb_but_defused",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 800
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_bonus_shorthanded",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 1000
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_elimination_bomb_map",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 3250
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_elimination_hostage_map_ct",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 3000
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_elimination_hostage_map_t",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 3000
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_rescued_hostage",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 600
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_team_hostage_alive",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_killed_enemy_default",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 300
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_killed_enemy_factor",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -100,
+            "max": 100,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_bomb_defused",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 300
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_bomb_planted",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 300
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_rescued_hostage",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 1000
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_damage_hostage",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": -30
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_killed_hostage",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": -1000
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_get_killed",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_killed_teammate",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": -300
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_interact_with_hostage",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 300
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cash_player_respawn_amount",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": -16000,
+            "max": 16000,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_buy_anywhere",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "No"
+              },
+              {
+                "value": "1",
+                "label": "Yes"
+              },
+              {
+                "value": "2",
+                "label": "Only T"
+              },
+              {
+                "value": "3",
+                "label": "Only CT"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_buytime",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 100000,
+            "def": 90
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mp_buy_during_immunity",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Disabled"
+              },
+              {
+                "value": "1",
+                "label": "Both Teams"
+              },
+              {
+                "value": "2",
+                "label": "Only Ts"
+              },
+              {
+                "value": "3",
+                "label": "Only CTs"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:server",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "con_enable",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "clear",
+      "parameters": [],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "exec",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "configname"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "host_writeconfig",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&configname"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "listissues",
+      "parameters": [],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "alias",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "placeholder": "Alias name"
+          }
+        },
+        {
+          "type": "table",
+          "value": {
+            "table_name": "commands",
+            "is_multiple_items": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "bind",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "keycodes",
+            "is_multiple_items": false
+          }
+        },
+        {
+          "type": "table",
+          "value": {
+            "table_name": "commands",
+            "is_multiple_items": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "unbind",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "keycodes",
+            "is_multiple_items": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "unbindall",
+      "parameters": [],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "key_listboundkeys",
+      "parameters": [],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "toggle",
+      "parameters": [
+        {
+          "type": "table",
+          "value": {
+            "table_name": "commands",
+            "is_multiple_items": false
+          }
+        },
+        {
+          "type": "string",
+          "value": {
+            "value": "&values"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "echo",
+      "parameters": [
+        {
+          "type": "string",
+          "value": {
+            "value": "&text"
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cq_netgraph",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Off"
+              },
+              {
+                "value": "1",
+                "label": "On"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "game:config",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "volume",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:audio",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_headphone_eq",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "0",
+                "label": "Natural"
+              },
+              {
+                "value": "1",
+                "label": "Crisp"
+              },
+              {
+                "value": "2",
+                "label": "Smooth"
+              }
+            ],
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:audio",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_steamaudio_enable_perspective_correction",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:audio",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "voice_modenable",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:audio",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_voipvolume",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:music",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "voice_modenable_toggle",
+      "parameters": [],
+      "metadata": {
+        "category": "audio:audio",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_menumusic_volume",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1,
+            "def": 0.04
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:music",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_roundstart_volume",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:music",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_roundaction_volume",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1,
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:music",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_mvp_volume",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1,
+            "def": 0.16
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:music",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_mapobjective_volume",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1,
+            "def": 0.04
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:music",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_tensecondwarning_volume",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1,
+            "def": 0.04
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:music",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_deathcamera_volume",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0,
+            "max": 1,
+            "def": 0.16
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:music",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "snd_mute_mvp_music_live_players",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": true
+          }
+        }
+      ],
+      "metadata": {
+        "category": "audio:music",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "mouse_inverty",
+      "parameters": [
+        {
+          "type": "bool",
+          "value": {
+            "def": false
+          }
+        }
+      ],
+      "metadata": {
+        "category": "mouse",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "sensitivity",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0.1,
+            "max": 8,
+            "def": 1
+          }
+        }
+      ],
+      "metadata": {
+        "category": "mouse",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "zoom_sensitivity_ratio",
+      "parameters": [
+        {
+          "type": "number",
+          "value": {
+            "min": 0.01,
+            "max": 3,
+            "def": 0.818933
+          }
+        }
+      ],
+      "metadata": {
+        "category": "mouse",
+        "sv_cheats": false
+      }
+    },
+    {
+      "name": "cl_debounce_zoom",
+      "parameters": [
+        {
+          "type": "enum",
+          "value": {
+            "options": [
+              {
+                "value": "false",
+                "label": "Repeat Enabled"
+              },
+              {
+                "value": "true",
+                "label": "Repeat Disabled"
+              }
+            ],
+            "def": 0
+          }
+        }
+      ],
+      "metadata": {
+        "category": "mouse",
+        "sv_cheats": false
+      }
+    }
+  ]
+}
